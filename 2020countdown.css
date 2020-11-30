@@ -1,0 +1,201 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    animation: colors 30s infinite linear, white_in 2s forwards;
+    overflow: hidden;
+    margin: 0;
+}
+
+button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: rgba(0, 0, 0, 0);
+    
+}
+
+button:hover {
+    color: white;
+}
+
+a {
+    color: rgba(0, 0, 0, 0);
+    text-decoration: none;
+}
+
+a:visited {
+    color: none;
+}
+
+a:hover {
+    color: white;
+}
+
+@keyframes white_in {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+#testbutton {
+    text-decoration: none;
+}
+
+.countDown {
+font-family: 'Iceland', cursive;
+text-align: center;
+width: 100%;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: rgb(255, 255, 255);
+text-shadow: 0 0 20px rgba(255, 255, 255, 0.726);
+font-size: 120px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.done {
+    animation: done 2s infinite both;
+}
+
+@keyframes done {
+    from{opacity: 1;}
+    50%{opacity: 0;}
+    to{opacity: 1;}
+}
+
+.final {
+        font-size: 400px;
+        font-family: 'Iceland', cursive;
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        top: 50vh;
+        left: 50vw;
+        transform: translate(-50vw, -50vh);
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 20px rgba(255, 255, 255, 0.726);
+}
+
+.semiFinal {
+    font-size: 300px;
+        font-family: 'Iceland', cursive;
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        top: 30vh;
+        left: 50vw;
+        transform: translate(-50%, -50%);
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 20px rgba(255, 255, 255, 0.726);
+}
+
+@keyframes colors {
+    0%{background-color: rgb(0, 0, 0);} 
+    10%{background-color: #FF00FF;}
+    20%{background-color: rgb(0, 0, 0);}
+    30%{background-color: #6DD7DB;}
+    40%{background-color: rgb(0, 0, 0);}
+    50%{background-color: #832232;}
+    60%{background-color: rgb(0, 0, 0); }
+    70%{background-color: #FFA5AB;}
+    80%{background-color: rgb(0, 0, 0);}
+    90%{background-color: #EE6352;}
+    100%{background-color: rgb(0, 0, 0);}
+}
+
+
+
+/* multicolor text  */
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+.text {
+    font-size: 160px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    color: rgba(255, 255, 255, 0);
+    mix-blend-mode: screen;
+    font-family: 'Iceland', cursive;
+}
+
+#t1 {
+    color: red;
+    text-shadow: 0 0 25px red;
+    animation: red 5s infinite;
+}
+
+#t2 {
+color: rgb(0, 255, 0);
+text-shadow: 0 0 25px rgb(0, 255, 0);
+animation: green 5s infinite;
+}
+
+#t3 {
+color: blue;
+text-shadow: 0 0 25px blue;
+animation: blue 5s infinite;
+}
+
+@keyframes red {
+    0%{transform: translate(-50%, -50%);}
+    33%{transform: translate(-45%, -50%);}
+    66%{transform: translate(-55%, -50%);}
+    100%{transform: translate(-50%, -50%);}
+}
+
+@keyframes green {
+    0%{transform: translate(-50%,-50%);}
+    33%{transform: translate(-40%, -50%);}
+    66%{transform: translate(-60%, -50%);}
+    100%{transform:translate(-50%,-50%);}
+}
+
+@keyframes blue {
+    0%{transform: translate(-50%, -50%);}
+    33%{transform: translate(-35%, -50%);}
+    66%{transform: translate(-65%, -50%);}
+    100%{transform: translate(-50%, -50%);}
+}
+
+@media screen and (max-width: 700px) {
+    .countDown {
+      font-size: 80px;
+    }
+
+    .text {
+        font-size: 110px;
+    }
+
+    .final {
+        font-size: 300px;
+        font-family: 'Iceland', cursive;
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        top: 50vh;
+        left: 50vw;
+        transform: translate(-50vw, -50vh);
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 20px rgba(255, 255, 255, 0.726);
+    }
+
+    .semiFinal {
+        font-size: 150px;
+            font-family: 'Iceland', cursive;
+            text-align: center;
+            width: 100%;
+            position: absolute;
+            top: 30vh;
+            left: 50vw;
+            transform: translate(-50%, -50%);
+            color: rgb(255, 255, 255);
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.726);
+    }
+  }

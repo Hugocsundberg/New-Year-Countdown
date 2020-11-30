@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./2020countdown.css">
+        <link href="https://fonts.googleapis.com/css?family=Iceland&display=swap" rel="stylesheet">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-130524244-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-130524244-2');
+</script>
+
+    </head>
+    <body>
+        <button onclick="Mute()">Mute</button>
+        <button onclick="button()" id="button">Click me if no sound</button>
+        <a href="http://svartkaff3.se/2020test/index.html" id="testbutton">Testsite</a>
+        <audio id="prevsong" src="./media/prevsong.mp3" loop></audio>
+        <audio id="mainsong" src="./media/Waiting for love.mp3"></audio>
+        <h1 id="t1" class="text">2021</h1>
+        <h1 id="t2" class="text">2021</h1>
+        <h1 id="t3" class="text">2021</h1>
+        <h1 id="countDown" class="countDown">Loading</h1>
+    
+       
+
+        
+        <script src="./2020countdown.js" async defer></script>
+    </body>
+</html>
